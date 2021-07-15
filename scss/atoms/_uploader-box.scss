@@ -1,0 +1,36 @@
+.uploader-box-container{
+  margin: 32px 0;
+  .uploader-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 320px;
+    background: var(--c-grey-light);
+    border: 2px dashed var(--c-grey-medium);
+    p{
+      margin: 0;
+      color: var(--c-grey);
+    }
+    &:before{
+      content:"";
+      width: 108px;
+      height: 146px;
+      background: url("img/ico-user.svg") no-repeat center center;
+      background-size: 100%;
+      margin-bottom: 24px;
+    }
+  }
+  img{
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .uploader-box-container {
+    margin:0 0 70px;
+  }
+}

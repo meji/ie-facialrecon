@@ -1,7 +1,5 @@
 
 :root {
-  //Variables
-
   //gutters
   --s: 8px;
   --m: calc(var(--s)*2); //16
@@ -17,27 +15,23 @@
   --rm: 6px;
 
   // fonts
-  --font-body: 'Open Sans', Helvetica, sans-serif;
-  --font-titles: "Oswald",  Helvetica, sans-serif;
+  --font-body: 'PT Serif', Helvetica, sans-serif;
+  --font-titles: "Montserrat",  Helvetica, sans-serif;
   --body-text-s: 14px;
-  --body-text-m: 16px;
+  --body-text-m: 15px;
   --body-text-l: 18px;
 
 
   //colores
-  --c-main:#449241;;
+  --c-main:#000066;
+  --c-secondary: #00338D;
+  --c-link: #46BEFF;
   --on-c-main: #fff;
-  --c-secondary: #F0D943;
-  --on-c-secondary: #000;
-  --c-main-light:#91CC87;
-  --c-grey: #333333;
-  --c-grey-dark: #171717;
-  --c-grey-light: #BBBBBB;
+  --c-grey: #BFC1C3;
+  --c-grey-medium: #DFE3E8;
+  --c-grey-light: #F6F6F7;
 
   //Transitions
   --transition: 0.3s;
+}
 
-}
-.focus{
-  box-shadow: var(--focus-shadow)
-}

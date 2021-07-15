@@ -435,3 +435,14 @@ a, .link{text-decoration: none}
 }
 
 img{max-width: 100%;}
+*:focus {
+  outline: none;
+}
+a {
+  color: #0097DC;
+}
+
+a:hover {
+  color: #0097DC;
+  text-decoration: underline;
+}
