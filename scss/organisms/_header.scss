@@ -78,6 +78,16 @@ header#header{
         font-weight: 800;
         order: 1;
         font-size: 1rem;
+        &:after{
+          content: "";
+          width:24px;
+          height:24px ;
+          background: url("img/log-out.svg") no-repeat center center;
+          background-size: 100%;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 6px;
+        }
       }
     }
   }

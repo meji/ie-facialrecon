@@ -13,7 +13,7 @@ footer {
   min-height: 100px;
   color: #FFF;
   padding: 80px 180px 60px;
-  background: #00338D;
+  background: var(--c-main);
   .footerTitleLink {
     width: auto;
     float: left;
@@ -29,6 +29,7 @@ footer {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
+    line-height: 1;
     &:after {
       font-size: 1rem;
       font-weight: 500;
@@ -47,6 +48,9 @@ footer {
     &:hover:after {
       transform: translateX(5px) translateZ(0);
       -webkit-transform: translateX(5px) translateZ(0);
+    }
+    &:hover{
+      text-decoration: none;
     }
   }
 
@@ -90,9 +94,7 @@ footer {
                 font-size: .875rem;
                 font-weight: 800;
                 line-height: 1.3rem;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
+                display: inline-block;
 
                 &:after {
                   font-family: icomoon;
@@ -365,3 +367,65 @@ footer {
     }
   }
 }
+
+//Fotter social//
+.footerContainer {
+  .footer-footer_social {
+    list-style: none;
+    padding: 0;
+    display: block;
+    a {
+      display: block;
+      color: #fff;
+      &:hover{
+        color: #fff;
+        text-decoration: none;
+      }
+      &:before {
+        display: block;
+        font-size: 1.6666666666666667em;
+        transition: transform 0.2s ease-out;
+      }
+
+      &.icon-ieurwd-icons {
+        font-size: 1.2222em;
+
+        &:before {
+          width: 1.2222em;
+          height: 1em;
+        }
+      }
+    }
+  }
+}
+
+.footer-footer_social a:hover:before {
+  transform: translate3d(0, -3px, 0);
+  -webkit-transform: translate3d(0, -3px, 0);
+  -ms-transform: translate3d(0, -3px, 0);
+}
+
+.footerContainer {
+  .footer-footer_social li {
+    float: left;
+    padding-right: 33px;
+    margin-bottom: 13px;
+    font-size: .7222222222222222em;
+    line-height: 2.0769230769em;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  + {
+    * {
+      margin-top: 58px;
+    }
+
+    .style02 {
+      margin-top: 67px;
+    }
+  }
+}
+

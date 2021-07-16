@@ -18,11 +18,13 @@
   --body-text-l: 18px;
   --c-main:#000066;
   --c-secondary: #00338D;
+  --on-c-button: #0097DC;
   --c-link: #46BEFF;
   --on-c-main: #fff;
   --c-grey: #BFC1C3;
   --c-grey-medium: #DFE3E8;
   --c-grey-light: #F6F6F7;
+  --c-text: #0F0F0F;
   --transition: 0.3s;
 }
 
@@ -33,6 +35,507 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "untitled-font-1";
+  src: url("fonts/untitled-font-1.eot");
+  src: url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"), url("fonts/untitled-font-1.woff") format("woff"), url("fonts/untitled-font-1.ttf") format("truetype"), url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^=icon-]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alert-circular:before {
+  content: "a";
+}
+
+.icon-attention:before {
+  content: "b";
+}
+
+.icon-calendar:before {
+  content: "c";
+}
+
+.icon-calendar-2:before {
+  content: "d";
+}
+
+.icon-certificate:before {
+  content: "e";
+}
+
+.icon-comment:before {
+  content: "f";
+}
+
+.icon-credit-card:before {
+  content: "g";
+}
+
+.icon-download:before {
+  content: "h";
+}
+
+.icon-download-four:before {
+  content: "i";
+}
+
+.icon-ieurwd-icons:before {
+  content: "j";
+}
+
+.icon-ieurwd-icons-1:before {
+  content: "k";
+}
+
+.icon-ieurwd-icons-2:before {
+  content: "l";
+}
+
+.icon-ieurwd-icons-3:before {
+  content: "m";
+}
+
+.icon-ieurwd-icons-4:before {
+  content: "n";
+}
+
+.icon-ieurwd-icons-5:before {
+  content: "o";
+}
+
+.icon-ieurwd-icons-6:before {
+  content: "p";
+}
+
+.icon-ieurwd-icons-7:before {
+  content: "q";
+}
+
+.icon-ieurwd-icons-8:before {
+  content: "r";
+}
+
+.icon-ieurwd-icons-9:before {
+  content: "s";
+}
+
+.icon-ieurwd-icons-10:before {
+  content: "t";
+}
+
+.icon-ieurwd-icons-11:before {
+  content: "u";
+}
+
+.icon-ieurwd-icons-12:before {
+  content: "v";
+}
+
+.icon-eye-open:before {
+  content: "w";
+}
+
+.icon-file-copy:before {
+  content: "x";
+}
+
+.icon-file-doc:before {
+  content: "y";
+}
+
+.icon-file-download:before {
+  content: "z";
+}
+
+.icon-file-list:before {
+  content: "A";
+}
+
+.icon-file-projects:before {
+  content: "B";
+}
+
+.icon-filters:before {
+  content: "C";
+}
+
+.icon-fly:before {
+  content: "D";
+}
+
+.icon-gear:before {
+  content: "E";
+}
+
+.icon-gear-2:before {
+  content: "F";
+}
+
+.icon-download-three:before {
+  content: "G";
+}
+
+.icon-download-two:before {
+  content: "H";
+}
+
+.icon-external-link:before {
+  content: "I";
+}
+
+.icon-eye-off:before {
+  content: "J";
+}
+
+.icon-ieurwd-icons-13:before {
+  content: "K";
+}
+
+.icon-ieurwd-icons-14:before {
+  content: "L";
+}
+
+.icon-ie-university-logo-azul:before {
+  content: "M";
+}
+
+.icon-ieurwd-icons-15:before {
+  content: "N";
+}
+
+.icon-ieurwd-icons-16:before {
+  content: "O";
+}
+
+.icon-ieurwd-icons-17:before {
+  content: "P";
+}
+
+.icon-ieurwd-icons-18:before {
+  content: "Q";
+}
+
+.icon-ieurwd-icons-19:before {
+  content: "R";
+}
+
+.icon-ieurwd-icons-20:before {
+  content: "S";
+}
+
+.icon-ieurwd-icons-21:before {
+  content: "T";
+}
+
+.icon-ieurwd-icons-22:before {
+  content: "U";
+}
+
+.icon-ieurwd-icons-23:before {
+  content: "V";
+}
+
+.icon-ieurwd-icons-24:before {
+  content: "W";
+}
+
+.icon-ieurwd-icons-25:before {
+  content: "X";
+}
+
+.icon-ieurwd-icons-26:before {
+  content: "Y";
+}
+
+.icon-ieurwd-icons-27:before {
+  content: "Z";
+}
+
+.icon-ieurwd-icons-28:before {
+  content: "0";
+}
+
+.icon-ieurwd-icons-29:before {
+  content: "1";
+}
+
+.icon-ieurwd-icons-30:before {
+  content: "2";
+}
+
+.icon-ieurwd-icons-31:before {
+  content: "3";
+}
+
+.icon-ieurwd-icons-32:before {
+  content: "4";
+}
+
+.icon-ieurwd-icons-33:before {
+  content: "5";
+}
+
+.icon-ieurwd-icons-34:before {
+  content: "6";
+}
+
+.icon-ieurwd-icons-35:before {
+  content: "7";
+}
+
+.icon-ieurwd-icons-36:before {
+  content: "8";
+}
+
+.icon-ieurwd-icons-37:before {
+  content: "9";
+}
+
+.icon-ieurwd-icons-38:before {
+  content: "!";
+}
+
+.icon-ieurwd-icons-39:before {
+  content: '"';
+}
+
+.icon-ieurwd-icons-40:before {
+  content: "#";
+}
+
+.icon-working:before {
+  content: "$";
+}
+
+.icon-vimeo:before {
+  content: "%";
+}
+
+.icon-user-women:before {
+  content: "&";
+}
+
+.icon-user-man:before {
+  content: "'";
+}
+
+.icon-user-1:before {
+  content: "(";
+}
+
+.icon-upload-two:before {
+  content: ")";
+}
+
+.icon-mail-2:before {
+  content: "*";
+}
+
+.icon-ieurwd-icons-41:before {
+  content: "+";
+}
+
+.icon-ieurwd-icons-42:before {
+  content: ",";
+}
+
+.icon-ieurwd-icons-43:before {
+  content: "-";
+}
+
+.icon-ieurwd-icons-44:before {
+  content: ".";
+}
+
+.icon-ieurwd-icons-45:before {
+  content: "/";
+}
+
+.icon-ieurwd-icons-46:before {
+  content: ":";
+}
+
+.icon-message:before {
+  content: ";";
+}
+
+.icon-microphone:before {
+  content: "<";
+}
+
+.icon-ieurwd-icons-47:before {
+  content: "=";
+}
+
+.icon-ieurwd-icons-49:before {
+  content: "?";
+}
+
+.icon-ieurwd-icons-50:before {
+  content: "@";
+}
+
+.icon-ieurwd-icons-51:before {
+  content: "[";
+}
+
+.icon-ieurwd-icons-54:before {
+  content: "_";
+}
+
+.icon-ieurwd-icons-55:before {
+  content: "`";
+}
+
+.icon-ieurwd-icons-57:before {
+  content: "|";
+}
+
+.icon-ieurwd-icons-48:before {
+  content: ">";
+}
+
+.icon-ieurwd-icons-56:before {
+  content: "{";
+}
+
+.icon-ieurwd-icons-58:before {
+  content: "}";
+}
+
+.icon-ieurwd-icons-59:before {
+  content: "~";
+}
+
+.icon-ieurwd-icons-60:before {
+  content: "\\";
+}
+
+.icon-ieurwd-icons-61:before {
+  content: "";
+}
+
+.icon-ieurwd-icons-62:before {
+  content: "";
+}
+
+.icon-ieurwd-icons-63:before {
+  content: "";
+}
+
+.icon-ieurwd-icons-65:before {
+  content: "";
+}
+
+.icon-ieurwd-icons-66:before {
+  content: "";
+}
+
+.icon-ieurwd-icons-67:before {
+  content: "";
+}
+
+.icon-ieurwd-icons-68:before {
+  content: "";
+}
+
+.icon-ieurwd-icons-69:before {
+  content: "";
+}
+
+.icon-log-out:before {
+  content: "";
+}
+
+.icon-location-2:before {
+  content: "";
+}
+
+.icon-location-1:before {
+  content: "";
+}
+
+.icon-info-circular:before {
+  content: "";
+}
+
+.icon-pencil:before {
+  content: "";
+}
+
+.icon-phone:before {
+  content: "";
+}
+
+.icon-question-circular:before {
+  content: "";
+}
+
+.icon-time:before {
+  content: "";
+}
+
+.icon-trash:before {
+  content: "";
+}
+
+.icon-upload-1:before {
+  content: "";
+}
+
+.icon-upload-doc:before {
+  content: "";
+}
+
+.icon-upload-four:before {
+  content: "";
+}
+
+.icon-upload-three:before {
+  content: "";
+}
+
+.icon-ieurwd-icons-70:before {
+  content: "";
+}
+
+.icon-ieurwd-icons-71:before {
+  content: "";
+}
+
+.icon-ieurwd-icons-72:before {
+  content: "";
+}
+
+.icon-ieurwd-icons-52:before {
+  content: "]";
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -480,14 +983,17 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0 22px;
-  border-color: #062C4A;
+  border-color: var(--c-main);
   background: #fff;
   color: var(--c-main);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
 }
 .btn:hover {
-  background-color: #062C4A;
-  border-color: #062C4A;
-  color: #FFFFFF;
+  border-color: var(--c-main);
+  color: var(--on-c-button);
 }
 .btn:focus, .btn:active {
   -webkit-box-shadow: none;
@@ -514,6 +1020,38 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/*btn animation*/
+.btn.btn-10 {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn.btn-10:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+.btn.btn-10:hover {
+  color: var(--on-c-button);
+  border-color: transparent;
+  background: transparent;
+}
+.btn.btn-10:hover:after {
+  background: #062C4A;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+body {
+  color: var(--c-text);
 }
 
 main {
@@ -724,7 +1262,7 @@ footer {
   min-height: 100px;
   color: #FFF;
   padding: 80px 180px 60px;
-  background: #00338D;
+  background: var(--c-main);
 }
 footer p {
   margin: 0;
@@ -748,6 +1286,7 @@ footer .footerTitleLink {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  line-height: 1;
 }
 footer .footerTitleLink:after {
   font-size: 1rem;
@@ -767,6 +1306,9 @@ footer .footerTitleLink:after {
 footer .footerTitleLink:hover:after {
   transform: translateX(5px) translateZ(0);
   -webkit-transform: translateX(5px) translateZ(0);
+}
+footer .footerTitleLink:hover {
+  text-decoration: none;
 }
 footer .footer1 {
   margin-bottom: 60px;
@@ -808,9 +1350,7 @@ footer .footer1 .footerContainer .inline ul li .external a {
   font-size: 0.875rem;
   font-weight: 800;
   line-height: 1.3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
 }
 footer .footer1 .footerContainer .inline ul li .external a:after {
   font-family: icomoon;
@@ -1030,6 +1570,55 @@ footer .footer2 .logoFooter {
     font-size: 0.75rem;
   }
 }
+.footerContainer .footer-footer_social {
+  list-style: none;
+  padding: 0;
+  display: block;
+}
+.footerContainer .footer-footer_social a {
+  display: block;
+  color: #fff;
+}
+.footerContainer .footer-footer_social a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.footerContainer .footer-footer_social a:before {
+  display: block;
+  font-size: 1.6666666667em;
+  transition: transform 0.2s ease-out;
+}
+.footerContainer .footer-footer_social a.icon-ieurwd-icons {
+  font-size: 1.2222em;
+}
+.footerContainer .footer-footer_social a.icon-ieurwd-icons:before {
+  width: 1.2222em;
+  height: 1em;
+}
+
+.footer-footer_social a:hover:before {
+  transform: translate3d(0, -3px, 0);
+  -webkit-transform: translate3d(0, -3px, 0);
+  -ms-transform: translate3d(0, -3px, 0);
+}
+
+.footerContainer .footer-footer_social li {
+  float: left;
+  padding-right: 33px;
+  margin-bottom: 13px;
+  font-size: 0.7222222222em;
+  line-height: 2.0769230769em;
+}
+.footerContainer .footer-footer_social li:last-child {
+  padding-right: 0;
+}
+.footerContainer + * {
+  margin-top: 58px;
+}
+.footerContainer + .style02 {
+  margin-top: 67px;
+}
+
 header#header .bottom {
   position: fixed;
   top: 0;
@@ -1111,6 +1700,16 @@ header#header .top .container .close-sesion-link {
   font-weight: 800;
   order: 1;
   font-size: 1rem;
+}
+header#header .top .container .close-sesion-link:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("img/log-out.svg") no-repeat center center;
+  background-size: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
 }
 
 #wrapper.open header#header .top {
